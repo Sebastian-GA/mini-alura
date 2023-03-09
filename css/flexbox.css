@@ -1,0 +1,111 @@
+/* Header */
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.headerPrincipal-nav {
+    display: flex;
+}
+
+/* Footer */
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+/* Map */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+
+    height: 260px;
+    flex-wrap: wrap;
+}
+
+/* List Courses */
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 23%;
+}
+
+/* Video */
+.videoSobre .container {
+    display: flex;
+    align-items: center;
+}
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
+    
+    height: auto;
+    aspect-ratio: 1.77;
+}
+
+/* ------------ Responsive ------------ */
+@media (max-width: 769px) {
+    /* Header */
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        justify-content: center;
+    }
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+    .headerPrincipal-nav-link-app {
+        order: -1; /* Hacer que aparezca de primero la opción "Nuestra APP"*/
+    }
+
+    /* Footer */
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+    }
+
+    /* Map */
+    .rodapePrincipal-navMap-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    /* List Courses */
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+    .contenidoPrincipal-cursos-link {
+        width: auto;
+    }
+
+    /* Video */
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+        width: 100%;
+    }
+}
