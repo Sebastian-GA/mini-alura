@@ -1,2 +1,3 @@
 # mini-alura
-CSS FlexBox | ONE – Oracle Next Education
+
+Responsive website using FlexBox. ONE – Oracle Next Education
